@@ -32,7 +32,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.card .circle {
+
+.front .circle {
   width: 50px;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -41,38 +42,85 @@ body {
   justify-content: center;
   align-items: center;
 }
-.card .circle img {
+.front .circle img {
   width: 16px;
   height: 16px;
 }
-.card .text {
+.front .text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 0.8rem;
 }
-.card .text h2 {
+.front .text h2 {
   font-size: 1.9rem;
   color: hsl(0, 0%, 100%);
 }
-.card .rating-list {
+.front .rating-list {
   width: 100%;
   list-style: none;
   font-family: inherit;
+  font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
 }
-.card button {
+.front .rating-list .list-item {
+  cursor: pointer;
+}
+.front .rating-list .list-item:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.front .rating-list .selected {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+.front button {
   width: 100%;
   padding: 0.8rem;
   font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 700;
   text-transform: uppercase;
   color: hsl(0, 0%, 100%);
-  font-size: 1.1rem;
   letter-spacing: 3px;
   border: none;
   border-radius: 30px;
   background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+.front button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.hide {
+  display: none;
+}
+
+.back {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  align-items: center;
+}
+.back .selected-rate-box {
+  background-color: hsl(215, 20%, 24%);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  color: rgba(251, 116, 19, 0.8);
+}
+.back .back-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.back .back-text h3 {
+  font-size: 1.8rem;
+  color: hsl(0, 0%, 100%);
+}
+.back .back-text p {
+  line-height: 1.5rem;
 }
 
 .attribution {
