@@ -33,7 +33,6 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Here](https://github.com/hsrvms/fm-interactive-rating-component-main)
-- Live Site URL: [Here](https://hsrvms.github.io/fm-interactive-rating-component-main/)
 
 ## My process
 
